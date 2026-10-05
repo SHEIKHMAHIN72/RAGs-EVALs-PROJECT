@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g001",
+    "query": "At what three levels should a RAG chatbot be evaluated?",
+    "ideal_answer": "A RAG chatbot should be evaluated at three levels: component level, pipeline level, and application or system level. At the component level, the retriever and generator are evaluated independently. At the pipeline level, the connected RAG pipeline is evaluated using the RAG triad. At the application level, the complete application is evaluated for qualities such as correctness, completeness, style, safety, and operational metrics.",
+    "source": "Session 4"
+  },
+  {
+    "id": "g002",
+    "query": "How do you evaluate a RAG retriever, and what do recall and precision measure?",
+    "ideal_answer": "The retriever is evaluated independently before it is connected to the generator. The main metrics discussed are recall and precision. Recall measures how many of the correct or relevant documents the retriever was able to retrieve. Precision measures how many of the documents retrieved were actually useful or relevant. The goal is to verify that the retriever can fetch the right documents for a given question.",
+    "source": "Session 4"
+  },
+  {
+    "id": "g003",
+    "query": "What is the RAG triad and what does each metric evaluate?",
+    "ideal_answer": "The RAG triad evaluates a connected RAG pipeline using three relationships: question-context, context-answer, and question-answer. Context relevance checks whether the context retrieved for a given question is relevant. Faithfulness checks whether the generated answer is supported by the retrieved context rather than being hallucinated. Answer relevance checks whether the generated answer is relevant to the user's question.",
+    "source": "Session 4"
+  },
+  {
+    "id": "g004",
+    "query": "What is regression testing in an LLM or RAG application?",
+    "ideal_answer": "Regression testing is the process of running the evaluation suite on a new version of an application and comparing its evaluation results with the previous version or baseline. The purpose is to determine whether the new version is objectively better or has become worse. An evaluation runner can execute the different evaluation tests and generate a report containing the new metrics, which can then be compared against the baseline before deciding whether to deploy the new version.",
+    "source": "Session 4"
+  },
+  {
+    "id": "g005",
+    "query": "What happens after a RAG application is deployed, and what is online evaluation used for?",
+    "ideal_answer": "Evaluation does not stop after deployment. The application is continuously evaluated online using production interactions. Signals such as latency, cost, token usage, and user feedback such as thumbs up or thumbs down can be captured through tracing or observability tools. Offline metrics such as faithfulness, answer relevance, and correctness can also be evaluated on live interactions. The system can monitor for performance drift, trigger alerts when metrics decline, and use production failures to enrich the offline golden dataset so that future versions can be evaluated more effectively.",
+    "source": "Session 4"
+  }
+]

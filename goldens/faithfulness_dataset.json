@@ -1,0 +1,32 @@
+[
+  {
+    "id": "f001",
+    "query": "What are the two main metrics used to evaluate a retriever?",
+    "ideal_context": [
+      "We will use two metrics for evaluation. One will be recall which tells how many of the right documents I was able to bring and the second is precision which means how many of the documents I brought were of use."
+    ],
+    "source_sessions": [
+      "4"
+    ]
+  },
+  {
+    "id": "f002",
+    "query": "What does faithfulness evaluate in a generator?",
+    "ideal_context": [
+      "In evaluating the generator, one metric will be faithfulness which basically tells whether the answer is generated in the given context or the model hallucinated by itself."
+    ],
+    "source_sessions": [
+      "4"
+    ]
+  },
+  {
+    "id": "f003",
+    "query": "What are the three metrics in the RAG triad?",
+    "ideal_context": [
+      "As soon as you make the RAG pipeline, you check three metrics and we call these three metrics RAG triad. First is context relevance, which tells that for a given question the context which has been fetched from retriever is relevant or not with the question. Second is faithfulness, which basically tells us that the answer generated is generated from context or something hallucinated by the model. Third is answer relevance, which tells whether the answer generated is relevant for the question or not."
+    ],
+    "source_sessions": [
+      "4"
+    ]
+  }
+]

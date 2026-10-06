@@ -5,7 +5,7 @@ from src.generator import generate
 class RagPipeline:
     def __init__(self, fetch_k=10, top_k=5):
         # one retriever instance — loads the store + reranker model once
-        self.retriever = RerankingRetriever(fetch_k=fetch_k, top_k=top_k)
+        self.retriever = RerankingRetriever(fetch_k=fetch_k, top_k=top_k) 
 
     def invoke(self, query: str) -> dict:
         # 1. RETRIEVE: over-fetch then rerank down to top_k Documents

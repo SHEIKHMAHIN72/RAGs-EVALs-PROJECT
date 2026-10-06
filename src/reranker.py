@@ -22,4 +22,4 @@ class RerankingRetriever:
 
         # 3. SORT by score, keep the best top_k
         ranked = sorted(zip(candidates, scores), key=lambda x: x[1], reverse=True)
-        return [doc for doc, _ in ranked[: self.top_k]]
+        return [doc for doc, _ in ranked[: self.top_k]],
